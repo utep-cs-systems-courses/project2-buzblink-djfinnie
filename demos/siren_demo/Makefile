@@ -14,8 +14,8 @@ all: go.elf
 button.elf: ${COMMON_OBJECTS} buzzer.o stateMachines.o wdInterruptHandler.o p2_interrupt_handler.o led.o switches.o buttonMain.o ../lib/libTimer.a
 	${CC} ${CFLAGS} ${LDFLAGS} -o $@ $^
 
-load: go.elf
-	msp430loader.sh go.elf
+load: blink.elf
+	msp430loader.sh blink.elf
 
 clean:
 	rm -f *.o *.elf
