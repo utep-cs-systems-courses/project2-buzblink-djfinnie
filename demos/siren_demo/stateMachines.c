@@ -45,7 +45,6 @@ void state_advance()		/* alternate between toggling red & green */
   case G: changed = toggle_green(); color = R; break;
   }
 
-  buzzer_advance();
   led_changed = changed;
   led_update();
 }
@@ -66,30 +65,17 @@ void main_state_advance()
     }
 }
 
-void alarm_advance() /* From the alarm we did in class */
+void button3_siren()
 {
-  static short state = 0;
-  switch (state){
+  state_advance();
+  buzzer_advance();
 
-  case 0:
-  case 1:
-    up_state();
-    state++;
-    break;
-
-  case 2:
-    down_state();
-    state = 0;
-
-  default:
-    break;
-  }
 }
 
-void button1_siren()
+void button4_off()
 {
+  buzzer_set_period(0);
   
-
 }
 
 void up_state()

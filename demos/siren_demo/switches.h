@@ -12,7 +12,7 @@
 
 #define S4 BIT3
 
-#define SWITCHESG (S1 | S2 | S3 | S4)
+#define SWITCHESB (S1 | S2 | S3 | S4)
 
 void switch_init();
 void switch_interrupt_handler();

@@ -11,11 +11,11 @@ AS              = msp430-elf-as
 all: go.elf 
 
 #additional rules for files
-button.elf: ${COMMON_OBJECTS} buzzer.o stateMachines.o wdInterruptHandler.o p2_interrupt_handler.o led.o switches.o buttonMain.o ../lib/libTimer.a
+go.elf: ${COMMON_OBJECTS} buzzer.o stateMachines.o wdInterruptHandler.o p2_interrupt_handler.o led.o switches.o main.o ../lib/libTimer.a
 	${CC} ${CFLAGS} ${LDFLAGS} -o $@ $^
 
-load: blink.elf
-	msp430loader.sh blink.elf
+load: go.elf
+	msp430loader.sh go.elf
 
 clean:
 	rm -f *.o *.elf
