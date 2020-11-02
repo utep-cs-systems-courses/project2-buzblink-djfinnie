@@ -39,7 +39,7 @@ void state_advance()		/* alternate between toggling red & green */
   case R: changed = toggle_red(); color = G; break;
   case G: changed = toggle_green(); color = R; break;
   }
-
+  
   led_changed = changed;
   led_update();
 }
