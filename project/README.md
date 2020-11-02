@@ -16,7 +16,7 @@
 4. Then type make into the console with MSP430 plugged in
 5. Then make load
 6. S1 will alternate between green and red leds
-7. S2 will will play a short song and flash red led on loop
-8. S3 will play a constant buzzer red led and dim flashing green led
+7. S2 will play a short song and flash red led on loop
+8. S3 will play a constant buzzer, red led, and dim flashing green led
 9. S4 will turn off buzzer and leds
 10. Type make clean to remove temp files created on load
