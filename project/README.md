@@ -1,7 +1,7 @@
-Project 2- buzzblink
+# Project 2- Buzzy-Blinky Toy
 
 
-Files--
+## Files--
 1. wdInterruptHandler - handles interrupts.
 2. buzzer - initialzes buzzer sets buzzer tones.
 3. led - initializes leds sets bits for green led or red to be displayed.
@@ -9,7 +9,7 @@ Files--
 5. stateMachines - contains all functions and states for the MSP430.
 6. switches - Initializes switches, dectects when they are pressed.
 
-How to use -
+## How to use -
 1. First open the project directory by using cd
 2. cd project
 3. cd src
